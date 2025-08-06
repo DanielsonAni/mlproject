@@ -6,14 +6,12 @@
 }
 
 body {
-    background: #f5f8ff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    padding: 20px;
+   background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
 }
 
 .login {
-    background: white;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    backdrop-filter: blur(5px); /* Soft blur effect */
     max-width: 600px;
     margin: 40px auto;
     padding: 30px 40px;
