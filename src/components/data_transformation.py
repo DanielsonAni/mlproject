@@ -20,7 +20,7 @@ from src.utils import save_object  # Utility to save Python objects (like pickle
 @dataclass
 class DataTransformationConfig:
     # File path where the preprocessor object will be saved
-    preprocessor_obj_file_path = os.path.join('artifacts', "proprocessor.pkl")
+    preprocessor_obj_file_path = os.path.join('artifacts', "preprocessor.pkl")
 
 # Main class for handling data transformation
 class DataTransformation:

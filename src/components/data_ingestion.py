@@ -13,6 +13,9 @@ from dataclasses import dataclass  # For creating simple data-holding classes
 from src.components.data_transformation import DataTransformation
 from src.components.data_transformation import DataTransformationConfig
 
+from src.components.model_trainer import ModelTrainerConfig
+from src.components.model_trainer import ModelTrainer
+
 # Configuration class using @dataclass decorator
 # Holds paths where the ingested data will be saved
 @dataclass
@@ -77,3 +80,6 @@ if __name__ == "__main__":
     # Perform data transformation on the train and test data
     # It returns transformed training array, testing array, and preprocessor object (which we ignore here)
     train_arr, test_arr, _ = data_transformation.initiate_data_transformation(train_data, test_data)
+
+    modeltrainer=ModelTrainer()
+    print(modeltrainer.initiate_model_trainer(train_arr,test_arr))
